@@ -1,0 +1,3 @@
+PiOnAPi - Calculate the constant Pi on a Raspberry Pi
+
+Use a streaming (spigot) algorigthm to compute the digits of Pi.
