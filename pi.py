@@ -6,6 +6,8 @@ from pyfiglet import figlet_format
 from termcolor import cprint
 from time import sleep
 
+fout = open("last_digit.txt", "w")
+
 pi = ""
 n = 0
 k, a, b, a1, b1 = 2, 4, 1, 12, 4
@@ -14,6 +16,7 @@ while True:
 	a, b, a1, b1 = a1, b1, p * a + q * a1, p * b + q * b1
 	d, d1 = a / b, a1 / b1
 	while d == d1:
+		fout.write(str(d) + "\n")
 		pi += str(d)
 		if(n < 8):
 			a, a1 = 10 * (a % b), 10 * (a1 % b1)
