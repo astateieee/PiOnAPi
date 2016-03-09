@@ -1,3 +1,11 @@
 PiOnAPi - Calculate the constant Pi on a Raspberry Pi
 
 Use a streaming (spigot) algorigthm to compute the digits of Pi.
+
+Dependencies:
+
+pyfiglet - pip install git+https://github.com/pwaller/pyfiglet
+termcolor - pip install termcolor
+
+Pip is used for ease of installation, but if it is not installed on your machine a guide can be found here.
+https://pip.pypa.io/en/stable/installing/
