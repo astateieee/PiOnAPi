@@ -18,11 +18,11 @@ while True:
 	while d == d1:
 		fout.write(str(d) + "\n")
 		pi += str(d)
-		if(n < 8):
-			a, a1 = 10 * (a % b), 10 * (a1 % b1)
-			d, d1 = a / b, a1 / b1
-			n += 1
-		else:
+		# if(n < 8):
+		a, a1 = 10 * (a % b), 10 * (a1 % b1)
+		d, d1 = a / b, a1 / b1
+		n += 1
+		if(n == 8):
 			cprint(figlet_format(pi, font="starwars"))
 			pi = ""
 			n = 0
